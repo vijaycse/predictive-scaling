@@ -10,7 +10,7 @@ gaming consoles etc. We scale up and down few times a month, sometimes weekly ba
 
 
 
-### Possiblity
+#### Input Dataset Analysis:
 
 Order trend/Transaction per second for most US based retailers are very much predictable (except during event hrs and few days in Nov and December).  
 In other words, less impacted by seasonality and the data is stationary almost. The following dataset of 2 yrs worth from one of the retailers data 
@@ -32,8 +32,6 @@ so that we can control the infra cost significantly.
 #### Design Overview:
   
 ![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_Overview_2.png)
-
-#### Input Dataset Analysis:
 
 
 
