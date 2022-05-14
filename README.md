@@ -27,7 +27,7 @@ so that we can control the infra cost significantly.
 
 #### Design Overview:
   
-![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_overview_1.png)
+![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_Overview_2.png)
 
 #### Input Dataset Analysis:
 
