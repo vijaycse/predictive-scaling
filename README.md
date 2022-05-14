@@ -73,3 +73,7 @@ create table oph_forecast
 We scale ahead of time before the events or spike seasons (holiday seasons Nov-Dec) generally. Auto scaling is reactive in nature
 and often times, its based on CPU and memory usage. 
 Predictive scaling works based on TPS/order trend.Predictive scaling and auto scaling can co-exist.
+
+
+#### Contribution:
+ Currently only the author(Vijaycse) is planning to contribute to this project. It is possible to open it for others to contribute in the future.
