@@ -5,9 +5,8 @@
 We are paying lot of money just for Google cloud platform (cloud infrastructure to run our business) in our product space.  
 We roughly run about ~500 instances (central and east) during normal traffic. 
 
-Needless to say, the number of instances are super high during events such as (xbox launch go crazy with all BOTs traffic), 
-gaming consoles etc. We scale up and down few times a month, sometimes weekly based on our perf tested scaling guidelines or for event hrs.
-
+Needless to say, the number of instances are super high during events such as Black friday or Cyber monday etc. 
+We scale up and down few times a month, sometimes weekly based on our perf tested scaling guidelines or for event hrs.
 
 
 #### Input Dataset Analysis:
@@ -24,9 +23,8 @@ found in kaggle shows
 
 ### Design Idea:
 
-The idea is to look at the last 2 yrs data and run Machine Learning TimeSeries linear regression model 
-to closely predict and auto scale hrly or every day based on predictions (numbers can be overridden for planned events) 
-so that we can control the infra cost significantly. 
+The idea is to look at the last 2 yrs data and run Machine Learning TimeSeries linear model to closely predict and auto scale hrly or every day 
+based on predictions (numbers can be overridden for planned events) so that we can control the infra cost significantly. 
 
 
 #### Design Overview:
@@ -38,7 +36,7 @@ so that we can control the infra cost significantly.
 #### Database:
 
 The idea is to store the predicted order per hr in a simple DB like postgres and write a micro batch (scheduled every hr) to scan the 
-the table to the read the predicted order the for the next hr ahead of time.
+table to the read the predicted order the for the next hr ahead of time.
 
 
 ```
