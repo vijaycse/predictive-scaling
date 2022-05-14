@@ -46,10 +46,10 @@ the table to the read the predicted order the for the next hr ahead of time.
 ```
 create table oph_forecast
 (
-	day_hr_ts timestamp,
-	order_per_hr double precision, 
-  manual_override boolean ,   // for manual override
-  override_order_per_hr double   // manual input to override
+   day_hr_ts timestamp,
+   order_per_hr double precision, 
+   manual_override boolean ,   // for manual override
+   override_order_per_hr double   // manual input to override
 );
 
 ```
