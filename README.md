@@ -2,7 +2,7 @@
 
 ### What
 
-We are burning lot of cash just for GCP in our product space.  
+We are paying lot of money just for Google cloud platform (cloud infrastructure to run our business) in our product space.  
 We roughly run about ~500 instances (central and east) during normal traffic. 
 
 Needless to say, the number of instances are super high during events such as (xbox launch go crazy with all BOTs traffic), 
@@ -14,11 +14,34 @@ Unlike store orders, digital order trend is very much predictable (except during
 In other words, less impacted by seasonality and the data is stationary almost.
 
 
+
+
 ### How
 
 The idea is to look at the last 2 yrs data and run Machine Learning TimeSeries linear regression model 
 to closely predict and auto scale hrly or every day based on predictions (numbers can be overridden for planned events) 
 so that we can control the infra cost significantly. 
+
+
+#### Design Overview:
+  
+
+
+#### Input Dataset Analysis:
+
+
+
+#### Database:
+
+
+
+#### Machine Learning:
+
+
+
+#### Google Cloud Auto Scaler APIs
+
+
 
 ### Why not Auto-scaling?
 
