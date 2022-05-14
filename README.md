@@ -13,7 +13,7 @@ gaming consoles etc. We scale up and down few times a month, sometimes weekly ba
 Unlike store orders, digital order trend is very much predictable (except during event hrs and few days in Nov and December).  
 In other words, less impacted by seasonality and the data is stationary almost.
 
-![Typical Order Trend](https://github.com/vijaycse/predictive-scaling)
+![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/main/Order_Trend.png)
 
 
 
@@ -27,7 +27,7 @@ so that we can control the infra cost significantly.
 
 #### Design Overview:
   
-![Design Overview](https://github.com/vijaycse/predictive-scaling)
+![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_Overview.png)
 
 #### Input Dataset Analysis:
 
