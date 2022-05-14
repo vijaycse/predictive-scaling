@@ -8,13 +8,17 @@ We roughly run about ~500 instances (central and east) during normal traffic.
 Needless to say, the number of instances are super high during events such as (xbox launch go crazy with all BOTs traffic), 
 gaming consoles etc. We scale up and down few times a month, sometimes weekly based on our perf tested scaling guidelines or for event hrs.
 
+
+
 ### Possiblity
 
-Unlike store orders, digital order trend is very much predictable (except during event hrs and few days in Nov and December).  
-In other words, less impacted by seasonality and the data is stationary almost.
+Order trend/Transaction per second for most US based retailers are very much predictable (except during event hrs and few days in Nov and December).  
+In other words, less impacted by seasonality and the data is stationary almost. The following dataset of 2 yrs worth from one of the retailers data 
+found in kaggle shows
+
+  -  Input dataset [Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store)
 
 ![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/main/Order_Trend.png)
-
 
 
 
@@ -35,11 +39,12 @@ so that we can control the infra cost significantly.
 
 #### Database:
 
-The idea is to stor the predicted order per hr in a simple DB like postgres and write a micro batch (scheduled every hr) to scan the 
+The idea is to store the predicted order per hr in a simple DB like postgres and write a micro batch (scheduled every hr) to scan the 
 the table to the read the predicted order the for the next hr ahead of time.
 
 
-```create table oph_forecast
+```
+create table oph_forecast
 (
 	day_hr_ts timestamp,
 	order_per_hr double precision, 
