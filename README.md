@@ -3,7 +3,7 @@
 ### Objective
 
 We are paying lot of money just for Google cloud platform (cloud infrastructure to run our business) in our product space.  
-We roughly run about ~500 instances (central and east) during normal traffic. 
+We roughly run about ~500 instances aka machines (central and east) during normal traffic. 
 
 Needless to say, the number of instances are super high during events such as Black friday or Cyber monday etc. 
 We scale up and down few times a month, sometimes weekly based on our perf tested scaling guidelines or for event hrs.
