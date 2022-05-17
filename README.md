@@ -12,7 +12,7 @@ We scale up and down few times a month, sometimes weekly based on our perf teste
 #### Input Dataset Analysis:
 
 Order trend/Transaction per second for most US based retailers are very much predictable (except during event hrs and few days in Nov and December).  
-In other words, less impacted by seasonality and the data is stationary almost. The following dataset of 2 yrs worth from one of the retailers data 
+In other words, impacted by predicatable seasonality and data is relatievely less stationary . The following dataset of 2 yrs worth from one of the retailers data 
 found in kaggle shows
 
   -  Input dataset [Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store)
