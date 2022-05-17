@@ -29,7 +29,7 @@ based on predictions (numbers can be overridden for planned events) so that we c
 
 #### Design Overview:
   
-![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_Overview_2.png)
+![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_overview_3.png)
 
 
 
