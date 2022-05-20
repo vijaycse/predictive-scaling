@@ -74,6 +74,23 @@ We scale ahead of time before the events or spike seasons (holiday seasons Nov-D
 and often times, its based on CPU and memory usage. 
 Predictive scaling works based on TPS/order trend.Predictive scaling and auto scaling can co-exist.
 
+### How predictive autoscaling works
+
+Predictive autoscaler forecasts your scaling metric based on the metric's historical trends. Forecasts are recomputed every few minutes, which lets the autoscaler rapidly adapt its forecast to very recent changes in load. Predictive autoscaler needs at least 3 days of history from which to determine a representative service usage pattern before it can provide predictions. Compute Engine uses up to 3 weeks of your MIG's load history to feed the machine learning model.
+
+Predictive autoscaler calculates the number of VMs needed to achieve your utilization target based on numerous factors, including the following:
+
+- The predicted future value of the scaling metric
+- The current value of the scaling metric
+- Confidence in past trends, including past variability of the scaling metric
+- The configured application initialization period, also referred to as the cool down period
+
+Based on such factors, the predictive autoscaler scales out your group ahead of anticipated demand.
+
+<img width="764" alt="Screen Shot 2022-05-20 at 4 43 07 PM" src="https://user-images.githubusercontent.com/4589748/169616420-69b29071-1094-472e-9fc3-84cf50770780.png">
+
+
+
 
 #### Contribution:
  Currently only the author(Vijaycse) is planning to contribute to this project. It is possible to open it for others to contribute in the future.
