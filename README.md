@@ -16,7 +16,7 @@ In other words, less impacted by unpredictable seasonality . The following datas
 
   -  Input dataset [Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store)
 
-![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/main/Order_Trend.png)
+![Typical Order Trend]([https://github.com/vijaycse/predictive-scaling/blob/main/Order_Trend.png](https://github.com/vijaycse/predictive-scaling/blob/vijaycse-dev/Order_Trend.png))
 
 
 ### Design Idea:
@@ -27,7 +27,7 @@ based on predictions (numbers can be overridden for planned events) so that we c
 
 #### Design Overview:
   
-![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_Overview_2.png)
+![Design Overview](https://github.com/vijaycse/predictive-scaling/blob/main/Design_overview_3.png)
 
 
 
@@ -61,10 +61,19 @@ create table oph_forecast
      - The data is not stationary so used shifting and logging technique to smooth the seasonality
      - Tested with Adfuller test to find out the p-value
      - Trained the model using best sarimax and found out (p,d,q)1,1,1 and 0,1,1,24 are the best possible combinations
-
-    TODO: // add screenshots 
+  
     
- Conclusion:
+   
+   Results:
+     
+    
+   ![SARIMAX-FORECAST](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_FORECAST_RESULTS.png)
+    
+   ![SARIMAX-FORECASR](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_RESULTS.png)
+   
+    
+ ##### Conclusion:
+ 
     SARIMA's forecasting was not good enough for us to consider.
 
 
@@ -85,15 +94,20 @@ create table oph_forecast
   
     y – Target
     ds – Datetime
+    
 
   Results:
 
-  todo
-
-
-  Conclusion:
-   Prophet results are much better than SARIMAX and hence choosing prophet prediction with buffer
-   to make a suggestion for predictive scaling
+   ![Prophet-Forecasting](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_results.png)
+   
+   ![Prophet-Measures](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_measures.png)
+   
+   ![Prophet-Variation](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_variations.png)
+   
+  
+  ###### Conclusion:
+  
+   Prophet results are much better than SARIMAX and hence choosing prophet prediction with buffer to make a suggestion for predictive scaling
 
 
 
@@ -108,7 +122,7 @@ create table oph_forecast
 
 ##### Companion Repo:
 
-   [Auto-Scaler][https://github.com/vijaycse/predictive-autoscaler]
+   [Predictive-Scaler][https://github.com/vijaycse/predictive-autoscaler]
 
 
 #### Contribution:
