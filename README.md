@@ -16,7 +16,7 @@ In other words, less impacted by unpredictable seasonality . The following datas
 
   -  Input dataset [Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store)
 
-![Typical Order Trend]([https://github.com/vijaycse/predictive-scaling/blob/main/Order_Trend.png](https://github.com/vijaycse/predictive-scaling/blob/vijaycse-dev/Order_Trend.png))
+![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/Dev/Order_Trend.png))
 
 
 ### Design Idea:
