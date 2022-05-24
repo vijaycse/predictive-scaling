@@ -141,3 +141,6 @@ create table oph_forecast
 
 #### Contribution:
  Currently only the author(Vijaycse) is planning to contribute to this project. It is possible to open it for others to contribute in the future.
+ 
+#### Presentation:
+ [Presentation](https://docs.google.com/presentation/d/1NQZ56vdSED6xQISN1o39OoY3Ud5eo83k3olHIZJETts/edit#slide=id.p1)
