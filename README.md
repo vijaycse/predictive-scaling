@@ -9,7 +9,7 @@ Needless to say, the number of instances are super high during events such as Bl
 We scale up and down few times a month, sometimes weekly based on our perf tested scaling guidelines or for event hrs.
 
 
-#### Input Dataset Analysis:
+#### Input Dataset Analysis(Exploratory Data Analysis):
 
 Order trend/Transaction per second for most US based retailers are very much predictable (except during event hrs and few days in Nov and December).  
 In other words, less impacted by unpredictable seasonality . The following dataset of 1 yr worth from one of the retailers data found in kaggle shows
@@ -36,12 +36,17 @@ based on predictions (numbers can be overridden for planned events) so that we c
 The idea is to store the predicted order per hr in a simple DB like postgres and write a micro batch (scheduled every hr) to scan the 
 table to the read the predicted order the for the next hr ahead of time.
 
+##### Entity Relationship Diagram:
+ 
+![Screen Shot 2022-05-23 at 8 51 22 PM](https://user-images.githubusercontent.com/4589748/169932548-42a037bc-80d4-48b6-b207-bc2bb46acc1a.png)
+
+We have two tables one to store `order_per_hr(oph)` and another one `order_per_hr_forecast(oph_forecast)` to store the predicated order_per_hr where `day_hr_ts` is a primary key to join them
 
 ```
 create table oph
 (
    day_hr_ts timestamp,
-   order_per_hr double precision
+   order_per_hr integer
 );
 
 ```
@@ -50,9 +55,9 @@ create table oph
 create table oph_forecast
 (
    day_hr_ts timestamp,
-   order_per_hr double precision, 
+   order_per_hr integer, 
    manual_override boolean ,   // for manual override
-   override_order_per_hr double   // manual input to override
+   override_order_per_hr integer   // manual input to override
 );
 
 ```
