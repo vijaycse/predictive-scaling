@@ -80,10 +80,14 @@ create table oph_forecast
    
    Results:
      
+   SARIMAX-FORECAST:
     
    ![SARIMAX-FORECAST](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_FORECAST_RESULTS.png)
+   
+   
+   SARIMAX-FORECAST-RESULTS:
     
-   ![SARIMAX-FORECASR](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_RESULTS.png)
+   ![SARIMAX-FORECAST-RESULTS](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_RESULTS.png)
    
     
  ##### Conclusion:
@@ -110,17 +114,19 @@ create table oph_forecast
     ds – Datetime
     
 
-  Results:
+  #### Results:
 
-
+   Prophet-Forecasting:
 
    ![Prophet-Forecasting](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_results.png)
    
    
+   Prophet-Measures:
    
    ![Prophet-Measures](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_measures.png)
    
    
+   Prophet-Variation:
    
    ![Prophet-Variation](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_variation_results.png)
    
