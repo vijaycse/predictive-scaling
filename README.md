@@ -16,7 +16,7 @@ In other words, less impacted by unpredictable seasonality . The following datas
 
   -  Input dataset [Dataset](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store)
 
-![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/Dev/Order_Trend.png))
+![Typical Order Trend](https://github.com/vijaycse/predictive-scaling/blob/Dev/Order_Trend.png)
 
 
 ### Design Idea:
@@ -116,7 +116,7 @@ create table oph_forecast
    
    ![Prophet-Measures](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_measures.png)
    
-   ![Prophet-Variation](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_variations.png)
+   ![Prophet-Variation](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_variation_results.png)
    
   
   ###### Conclusion:
