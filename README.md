@@ -112,11 +112,18 @@ create table oph_forecast
 
   Results:
 
+
+
    ![Prophet-Forecasting](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_results.png)
+   
+   
    
    ![Prophet-Measures](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_measures.png)
    
+   
+   
    ![Prophet-Variation](https://github.com/vijaycse/predictive-scaling/blob/main/images/Prophet_variation_results.png)
+   
    
   
   ###### Conclusion:
