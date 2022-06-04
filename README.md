@@ -168,6 +168,6 @@ Prediction Insights:
 
 ![Prediction Insights](https://github.com/vijaycse/predictive-scaling/blob/main/images/prediction_insights.png)
 
-Cost Savings:
+Potential Cost Savings:
 
 ![Cost Savings](https://github.com/vijaycse/predictive-scaling/blob/main/images/Cost_Saving_Monthly.png)
