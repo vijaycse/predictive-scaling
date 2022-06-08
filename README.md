@@ -89,6 +89,10 @@ create table oph_forecast
     
    ![SARIMAX-FORECAST-RESULTS](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_RESULTS.png)
    
+   SARIMAX-ACCURACY:
+   
+   ![SARIMAX-ACCURACY](https://github.com/vijaycse/predictive-scaling/blob/main/images/SARIMAX_Accuracy.png)
+   
     
  ##### Conclusion:
  
