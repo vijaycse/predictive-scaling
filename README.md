@@ -157,3 +157,17 @@ create table oph_forecast
  
 #### Presentation:
  [Presentation](https://docs.google.com/presentation/d/1NQZ56vdSED6xQISN1o39OoY3Ud5eo83k3olHIZJETts/edit#slide=id.p1)
+
+#### Visualization:
+
+Actual VS Prediction:
+
+![Actual VS Prediction](https://github.com/vijaycse/predictive-scaling/blob/main/images/ActualVsPrediction.png)
+
+Prediction Insights:
+
+![Prediction Insights](https://github.com/vijaycse/predictive-scaling/blob/main/images/prediction_insights.png)
+
+Potential Cost Savings:
+
+![Cost Savings](https://github.com/vijaycse/predictive-scaling/blob/main/images/Cost_Saving_Monthly.png)
